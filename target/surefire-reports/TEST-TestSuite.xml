@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestSuite" time="2.414" tests="14" errors="0" skipped="13" failures="1">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="19.0.1+10-21"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home/lib"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/ilham/IdeaProjects/Tokopedia-Testing-Framework-master"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="user.country" value="ID"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/ilham/IdeaProjects/Tokopedia-Testing-Framework-master"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="19.0.1+10-21"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/cy/b2lqh3yj6wn_x7d6kjsyr0p00000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/usr/local/apache-maven-3.8.6/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/ilham/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/usr/local/apache-maven-3.8.6/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="63.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="13.0"/>
+    <property name="library.jansi.path" value="/usr/local/apache-maven-3.8.6/lib/jansi-native"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/ilham"/>
+    <property name="user.timezone" value="Asia/Jakarta"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="19"/>
+    <property name="user.name" value="ilham"/>
+    <property name="java.class.path" value="/usr/local/apache-maven-3.8.6/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="19"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home"/>
+    <property name="apple.awt.application.name" value="Launcher"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="19.0.1"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/local/apache-maven-3.8.6"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2022-10-18"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase name="SetUp" classname="com.testing.SetUp" time="2.414">
+    <failure message="Connection refused&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;Ilhams-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:83c:15d6:6cda:e3f5%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.0&apos;, java.version: &apos;19.0.1&apos;&#10;Driver info: driver.version: AndroidDriver" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: Connection refused
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'Ilhams-MacBook-Pro.local', ip: 'fe80:0:0:0:83c:15d6:6cda:e3f5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.0', java.version: '19.0.1'
+Driver info: driver.version: AndroidDriver
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:535)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:585)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:666)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:160)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:105)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:185)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:209)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
+	at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:38)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:84)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:94)
+	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:93)
+	at com.testing.SetUp.SetUp(SetUp.java:70)
+]]></failure>
+    <system-out><![CDATA[[DEBUG] SetUp initiated
+[DEBUG] Test platform: android
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="SkipSplashScreen" classname="com.testing.tokopedia.SplashScreen" time="0">
+    <skipped/>
+    <system-out><![CDATA[[DEBUG] SplashScreen|Executing SkipSplashScreen|Thread 1|{platform=android}
+[DEBUG] SplashScreen|Test SkipSplashScreen is Skipped in 0 ms|Thread 1
+]]></system-out>
+  </testcase>
+  <testcase name="Search" classname="com.testing.tokopedia.Home" time="0">
+    <skipped/>
+    <system-out><![CDATA[[DEBUG] Home|Executing Search|Thread 1|{input=sepatu futsal, platform=android}
+[DEBUG] Home|Test Search is Skipped in 0 ms|Thread 1
+]]></system-out>
+  </testcase>
+  <testcase name="OrderBy" classname="com.testing.tokopedia.search.Search" time="0">
+    <skipped/>
+    <system-out><![CDATA[[DEBUG] Search|Executing OrderBy|Thread 1|{input=Harga Tertinggi, platform=android}
+[DEBUG] Search|Test OrderBy is Skipped in 0 ms|Thread 1
+]]></system-out>
+  </testcase>
+  <testcase name="SelectTopAds" classname="com.testing.tokopedia.search.Search" time="0">
+    <skipped/>
+    <system-out><![CDATA[[DEBUG] Search|Executing SelectTopAds|Thread 1|{platform=android}
+[DEBUG] Search|Test SelectTopAds is Skipped in 0 ms|Thread 1
+]]></system-out>
+  </testcase>
+  <testcase name="SummaryLogin" classname="com.testing.tokopedia.Login" time="0">
+    <skipped/>
+    <system-out><![CDATA[[DEBUG] Login|Executing SummaryLogin|Thread 1|{platform=android}
+[DEBUG] Login|Test SummaryLogin is Skipped in 0 ms|Thread 1
+]]></system-out>
+  </testcase>
+  <testcase name="Buy" classname="com.testing.tokopedia.search.Summary" time="0">
+    <skipped/>
+    <system-out><![CDATA[[DEBUG] Summary|Executing Buy|Thread 1|{platform=android}
+[DEBUG] Summary|Test Buy is Skipped in 0 ms|Thread 1
+]]></system-out>
+  </testcase>
+  <testcase name="Note" classname="com.testing.tokopedia.search.Cart" time="0">
+    <skipped/>
+    <system-out><![CDATA[[DEBUG] Cart|Executing Note|Thread 1|{input=testing long notes, platform=android}
+[DEBUG] Cart|Test Note is Skipped in 0 ms|Thread 1
+]]></system-out>
+  </testcase>
+  <testcase name="AddQuantity" classname="com.testing.tokopedia.search.Cart" time="0">
+    <skipped/>
+    <system-out><![CDATA[[DEBUG] Cart|Executing AddQuantity|Thread 1|{platform=android}
+[DEBUG] Cart|Test AddQuantity is Skipped in 0 ms|Thread 1
+]]></system-out>
+  </testcase>
+  <testcase name="Checkout" classname="com.testing.tokopedia.search.Cart" time="0">
+    <skipped/>
+    <system-out><![CDATA[[DEBUG] Cart|Executing Checkout|Thread 1|{platform=android}
+[DEBUG] Cart|Test Checkout is Skipped in 0 ms|Thread 1
+]]></system-out>
+  </testcase>
+  <testcase name="ChooseCourrier" classname="com.testing.tokopedia.search.Checkout" time="0">
+    <skipped/>
+    <system-out><![CDATA[[DEBUG] Checkout|Executing ChooseCourrier|Thread 1|{platform=android}
+[DEBUG] Checkout|Test ChooseCourrier is Skipped in 0 ms|Thread 1
+]]></system-out>
+  </testcase>
+  <testcase name="Pay" classname="com.testing.tokopedia.search.Checkout" time="0">
+    <skipped/>
+    <system-out><![CDATA[[DEBUG] Checkout|Executing Pay|Thread 1|{platform=android}
+[DEBUG] Checkout|Test Pay is Skipped in 0 ms|Thread 1
+]]></system-out>
+  </testcase>
+  <testcase name="AfterTest" classname="com.testing.SetUp" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="AfterSuite" classname="com.testing.SetUp" time="0">
+    <skipped/>
+  </testcase>
+</testsuite>

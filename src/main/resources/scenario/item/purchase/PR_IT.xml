@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PR_IT Purchase item suite tests" thread-count="1" parallel="false">
+
+    <test enabled="true" name="PR_IT_001 Purchase sepatu futsal with order by Harga Tertinggi in android" >
+
+        <parameter name="platform" value="android" />
+
+        <classes>
+            <class name="com.testing.SetUp"/>
+            <class name="com.testing.tokopedia.SplashScreen"/>
+            <class name="com.testing.tokopedia.Home">
+                <methods>
+                    <include name="Search">
+                        <parameter name = "input" value="sepatu futsal" />
+                    </include>
+                </methods>
+            </class>
+            <class name="com.testing.tokopedia.search.Search">
+                <methods>
+                    <include name = "OrderBy">
+                        <parameter name = "input" value="Harga Tertinggi"/>
+                    </include>
+                    <include name = "SelectTopAds" />
+                </methods>
+            </class>
+            <class name="com.testing.tokopedia.Login" >
+                <methods>
+                    <include name = "SummaryLogin" />
+                </methods>
+            </class>
+            <class name="com.testing.tokopedia.search.Summary" >
+                <methods>
+                    <include name = "Buy" />
+                </methods>
+            </class>
+            <class name="com.testing.tokopedia.search.Cart" >
+                <methods>
+                    <include name = "Note" >
+                        <parameter name = "input" value="testing long notes"/>
+                    </include>
+                    <include name = "AddQuantity" />
+                    <include name = "Checkout" />
+                </methods>
+            </class>
+            <class name="com.testing.tokopedia.search.Checkout" >
+                <methods>
+                    <include name = "ChooseCourrier" />
+                    <include name = "Pay" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test enabled="false" name="PR_IT_002 Purchase sepatu futsal with order by Harga Terendah in web" >
+
+        <parameter name="platform" value="web" />
+
+        <classes>
+            <class name="com.testing.SetUp"/>
+            <class name="com.testing.tokopedia.SplashScreen"/>
+            <class name="com.testing.tokopedia.Home">
+                <methods>
+                    <include name="Search">
+                        <parameter name = "input" value="baju futsal" />
+                    </include>
+                </methods>
+            </class>
+            <class name="com.testing.tokopedia.search.Search">
+                <methods>
+                    <include name = "OrderBy">
+                        <parameter name = "input" value="Harga Terendah"/>
+                    </include>
+                    <include name = "Select" />
+                </methods>
+            </class>
+            <class name="com.testing.tokopedia.Login" >
+                <methods>
+                    <include name = "SummaryLogin" />
+                </methods>
+            </class>
+            <class name="com.testing.tokopedia.search.Summary" >
+                <methods>
+                    <include name = "Buy" />
+                </methods>
+            </class>
+            <class name="com.testing.tokopedia.search.Cart" >
+                <methods>
+                    <include name = "Note" />
+                    <include name = "AddQuantity" >
+                        <parameter name = "input" value="2"/>
+                    </include>
+                    <include name = "Checkout" />
+                </methods>
+            </class>
+            <class name="com.testing.tokopedia.search.Checkout" >
+                <methods>
+                    <include name = "ChooseCourrier" />
+                    <include name = "Pay" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

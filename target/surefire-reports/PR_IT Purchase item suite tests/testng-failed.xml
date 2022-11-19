@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [PR_IT Purchase item suite tests]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="1" name="PR_IT_001 Purchase sepatu futsal with order by Harga Tertinggi in android(failed)" verbose="0">
+    <parameter name="platform" value="android"/>
+    <classes>
+      <class name="com.testing.tokopedia.search.Checkout">
+        <methods>
+          <include name="ChooseCourrier"/>
+          <include name="Pay"/>
+        </methods>
+      </class> <!-- com.testing.tokopedia.search.Checkout -->
+      <class name="com.testing.tokopedia.SplashScreen">
+        <methods>
+          <include name="SkipSplashScreen"/>
+        </methods>
+      </class> <!-- com.testing.tokopedia.SplashScreen -->
+      <class name="com.testing.tokopedia.search.Summary">
+        <methods>
+          <include name="Buy"/>
+        </methods>
+      </class> <!-- com.testing.tokopedia.search.Summary -->
+      <class name="com.testing.tokopedia.Login">
+        <methods>
+          <include name="SummaryLogin"/>
+        </methods>
+      </class> <!-- com.testing.tokopedia.Login -->
+      <class name="com.testing.tokopedia.Home">
+        <methods>
+          <include name="Search">
+            <parameter name="input" value="sepatu futsal"/>
+          </include> <!-- Search -->
+        </methods>
+      </class> <!-- com.testing.tokopedia.Home -->
+      <class name="com.testing.tokopedia.search.Cart">
+        <methods>
+          <include name="AddQuantity"/>
+          <include name="Checkout"/>
+          <include name="Note">
+            <parameter name="input" value="testing long notes"/>
+          </include> <!-- Note -->
+        </methods>
+      </class> <!-- com.testing.tokopedia.search.Cart -->
+      <class name="com.testing.SetUp">
+        <methods>
+          <include name="AfterSuite"/>
+          <include name="SetUp"/>
+          <include name="AfterTest"/>
+        </methods>
+      </class> <!-- com.testing.SetUp -->
+      <class name="com.testing.tokopedia.search.Search">
+        <methods>
+          <include name="SelectTopAds"/>
+          <include name="OrderBy">
+            <parameter name="input" value="Harga Tertinggi"/>
+          </include> <!-- OrderBy -->
+        </methods>
+      </class> <!-- com.testing.tokopedia.search.Search -->
+    </classes>
+  </test> <!-- PR_IT_001 Purchase sepatu futsal with order by Harga Tertinggi in android(failed) -->
+</suite> <!-- Failed suite [PR_IT Purchase item suite tests] -->
